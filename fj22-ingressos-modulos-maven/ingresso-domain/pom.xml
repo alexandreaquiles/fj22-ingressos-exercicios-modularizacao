@@ -1,0 +1,66 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>br.com.caelum</groupId>
+		<artifactId>ingresso</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>ingresso-domain</artifactId>
+
+	<dependencies>
+
+		<!-- @Component em Carrinho -->
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework</groupId> -->
+		<!-- <artifactId>spring-context</artifactId> -->
+		<!-- <version>4.3.5.RELEASE</version> -->
+		<!-- </dependency> -->
+
+		<!-- @SessionScoped em Carrinho -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.5.RELEASE</version>
+		</dependency>
+
+		<!-- @NotNull em Lugar -->
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.1.0.Final</version>
+		</dependency>
+
+		<!-- @NotBlank em Sala e Lugar -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>5.2.4.Final</version>
+		</dependency>
+
+		<!-- @Entity, @Id, @GeneratedValue, @OneToMany, @ManyToOne, @Enumerated 
+			e CascadeType, FetchType, EnumType em Compra, Filme, Ingresso, Lugar, Sala, 
+			Sessao -->
+		<dependency>
+			<groupId>org.hibernate.javax.persistence</groupId>
+			<artifactId>hibernate-jpa-2.1-api</artifactId>
+			<version>1.0.0.Final</version>
+		</dependency>
+
+		<!-- @JsonProperty em DetalhesDoFilme e ImagemCapa -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.8.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+		</dependency>
+
+
+	</dependencies>
+
+</project>
